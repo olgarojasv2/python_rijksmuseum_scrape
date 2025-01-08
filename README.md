@@ -15,9 +15,7 @@ This project showcases the process of scraping data from the Rijksmuseum's onlin
 
 ## Data Collection
 
-- Pandas and BeautifulSoup were used to scrape and visualise the data.
-- Initially, the collections were analysed: https://www.rijksmuseum.nl/nl/collectie
-- Moreover, to minimize the scope, within the collection, the portraits were employed. This link was used to decide the corpus: https://www.rijksmuseum.nl/nl/collectie/node/Portretten--a7c5ba17a2c44f96a25b7c8e0f6fa33d?collectionSearchContext=Art&page=1&sortingType=Popularity&facets[0].id=a7c5ba17a2c44f96a25b7c8e0f6fa33d&facets[0].nodeRelationType=HasRijksTheme
+In the Jupyter Notebook titled Rijksmuseum_Portraits_Metadata.ipynb, the process for web scraping is outlined. First, Pandas and BeautifulSoup were imported to facilitate data scraping and visualization. A request was then made to access the entirety of the Rijksmuseum's collections using the following link https://www.rijksmuseum.nl/nl/collectie. To narrow the focus, portraits within the collection were examined using the same technique (requests.get()). This link was utilized to determine the specific corpus: https://www.rijksmuseum.nl/nl/collectie/node/Portretten--a7c5ba17a2c44f96a25b7c8e0f6fa33d?collectionSearchContext=Art&page=1&sortingType=Popularity&facets[0].id=a7c5ba17a2c44f96a25b7c8e0f6fa33d&facets[0].nodeRelationType=HasRijksTheme
 
 From that link, the selection of 4 paintings was made. All these paintings are under the label of "public domain".
 1. Self-portrait as the Apostle Paul
@@ -51,12 +49,14 @@ BeautifulSoup: For parsing HTML and extracting data
 ## Data Structure
 
 The scraped data is stored in a CSV file with the following columns:
-Column Name	Description
-Title	The title of the scraped item
-Date	The date associated with the item
-Technique  The technique employed to elaborate the work of art
-Description	A brief description of the item
-Image URL	The URL of the associated image
+
+| Column Names | Description |
+| ----------- | ----------- |
+| Title       | The title of the scraped item |
+| Date        | The date associated with the item |
+| Technique   | The technique employed to elaborate the work of art |
+| Description | A brief description of the item |
+| Image URL   | The URL of the associated image |
 
 
 ## Rijksmuseum Open Data Policy
