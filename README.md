@@ -36,8 +36,8 @@ All the information is recompiled in an Annotated Corpus File (.csv), with diffe
 ## Tools and Libraries
 
 We used the following Python libraries for web scraping and data processing:
-Pandas: For data manipulation and CSV file creation
-BeautifulSoup: For parsing HTML and extracting data
+- Pandas: For data manipulation and CSV file creation
+- BeautifulSoup: For parsing HTML and extracting data
 
 ## Scraping Process
 1. Initialize the Python project and import necessary libraries
