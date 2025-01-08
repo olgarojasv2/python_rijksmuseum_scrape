@@ -1,10 +1,11 @@
-# How to scrape the Web using Python?
-A case study of the Rijksmuseum
+# Rijksmuseum's Collection of Portraits Dataset
 
 ## Overview
-This project demonstrates how to scrape data from the Rijksmuseum's online collection using Python. We focus on extracting information about six paintings from the museum's portrait collection, showcasing the power of web scraping for art historical research.
+
+This project showcases the process of scraping data from the Rijksmuseum's online collection using Python. It specifically focuses on extracting information about four paintings from the museum's portrait collection, underscoring the potential of web scraping in art historical research. The resulting dataset is tailored for researchers and is also suitable for training large language models in face image recognition.
 
 ## Project Structure
+
 1. Data Collection
 2. Corpus Description
 3. Tools and Libraries
@@ -16,7 +17,7 @@ This project demonstrates how to scrape data from the Rijksmuseum's online colle
 
 - Pandas and BeautifulSoup were used to scrape and visualise the data.
 - Initially, the collections were analysed: https://www.rijksmuseum.nl/nl/collectie
-- Moreover, to minimise the scope, within the collection, the portraits were employed. This link was used to decide the corpus: https://www.rijksmuseum.nl/nl/collectie/node/Portretten--a7c5ba17a2c44f96a25b7c8e0f6fa33d?collectionSearchContext=Art&page=1&sortingType=Popularity&facets[0].id=a7c5ba17a2c44f96a25b7c8e0f6fa33d&facets[0].nodeRelationType=HasRijksTheme
+- Moreover, to minimize the scope, within the collection, the portraits were employed. This link was used to decide the corpus: https://www.rijksmuseum.nl/nl/collectie/node/Portretten--a7c5ba17a2c44f96a25b7c8e0f6fa33d?collectionSearchContext=Art&page=1&sortingType=Popularity&facets[0].id=a7c5ba17a2c44f96a25b7c8e0f6fa33d&facets[0].nodeRelationType=HasRijksTheme
 
 From that link, the selection of 4 paintings was made. All these paintings are under the label of "public domain".
 1. Self-portrait as the Apostle Paul
@@ -30,9 +31,9 @@ https://www.rijksmuseum.nl/nl/collectie/object/Isabella--ead5f623d828c7250ce5413
 
 ## Corpus Description
 
-The Rijksmuseum corpus consists of a list of six paintings belonging to the Rijksmuseum portrait collection. Each entry contains both visual and textual data.
+The Rijksmuseum corpus consists of a list of four paintings belonging to the Rijksmuseum portrait collection. Each entry contains both visual and textual data.
 
-Both corpora are divided into two CSV files, with different categories that will be explored in the next section. All the information recollected and portrayed is in English.
+All the information is recompiled in an Annotated Corpus File (.csv), with different categories that will be explored in the next section. All the information recollected and portrayed is in English.
 
 ## Tools and Libraries
 
@@ -50,10 +51,13 @@ BeautifulSoup: For parsing HTML and extracting data
 ## Data Structure
 
 The scraped data is stored in a CSV file with the following columns:
-- Title
-- Date
-- Description
-- Image URL
+Column Name	Description
+Title	The title of the scraped item
+Date	The date associated with the item
+Technique  The technique employed to elaborate the work of art
+Description	A brief description of the item
+Image URL	The URL of the associated image
+
 
 ## Rijksmuseum Open Data Policy
 
