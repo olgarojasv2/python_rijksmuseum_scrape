@@ -53,8 +53,8 @@ The scraped data is stored in a CSV file with the following columns:
 | Column Names | Description |
 | ----------- | ----------- |
 | Title       | The title of the scraped item |
-| Date        | The date associated with the item |
 | Technique   | The technique employed to elaborate the work of art |
+| Date        | The date associated with the item |
 | Description | A brief description of the item |
 | Image URL   | The URL of the associated image |
 
