@@ -17,7 +17,7 @@ This project showcases the process of scraping data from the Rijksmuseum's onlin
 
 In the Jupyter Notebook titled Rijksmuseum_Portraits_Metadata.ipynb, the process for web scraping is outlined. First, Pandas and BeautifulSoup were imported to facilitate data scraping and visualization. A request was then made to access the entirety of the Rijksmuseum's collections using the following link https://www.rijksmuseum.nl/nl/collectie. To narrow the focus, portraits within the collection were examined using the same technique (requests.get()). This link was utilized to determine the specific corpus: https://www.rijksmuseum.nl/nl/collectie/node/Portretten--a7c5ba17a2c44f96a25b7c8e0f6fa33d?collectionSearchContext=Art&page=1&sortingType=Popularity&facets[0].id=a7c5ba17a2c44f96a25b7c8e0f6fa33d&facets[0].nodeRelationType=HasRijksTheme
 
-From that link, the selection of 4 paintings was made. All these paintings are under the label of "public domain".
+From that link, four paintings were selected. All these paintings are in the "public domain."
 1. Self-portrait as the Apostle Paul
 https://www.rijksmuseum.nl/nl/collectie/object/Zelfportret-als-de-apostel-Paulus--4faa97ed774e6e3f81b76cf3aed6226d?collectionSearchContext=Art&page=1&sortingType=Popularity&facets[0].id=a7c5ba17a2c44f96a25b7c8e0f6fa33d&facets[0].nodeRelationType=HasRijksTheme
 2. <u> Self-Portrait Vincent van Gogh </u>
@@ -40,6 +40,7 @@ We used the following Python libraries for web scraping and data processing:
 - BeautifulSoup: For parsing HTML and extracting data
 
 ## Scraping Process
+
 1. Initialize the Python project and import necessary libraries
 2. Connect to the target URLs using requests
 3. Parse the HTML content with BeautifulSoup
@@ -59,7 +60,9 @@ The scraped data is stored in a CSV file with the following columns:
 | Image URL   | The URL of the associated image |
 
 
-## Rijksmuseum Open Data Policy
+## Ethical Considerations 
+
+### Rijksmuseum Open Data Policy
 
 Our collection is for everyone. That’s why the Rijksmuseum makes its digitised collections and metadata available in the highest quality. And we don’t ask for anything in return.
 
@@ -68,7 +71,7 @@ Many of the objects in the Rijksmuseum are in the public domain. This means that
 
 All the digital reproductions and data that we currently publish via our data services are made by the Rijksmuseum. To the extent that copyright and database rights apply to these digital sources, the Rijksmuseum waives these rights by using the Creative Commons Zero (CC0) Public Domain Statement.
 
-When collections objects are free of copyright, this is explicitly stated in the corresponding descriptive metadata. In these cases, the copyright notice states “Public domain”, with a reference to the CC0 Public Domain Statement.
+When collection objects are free of copyright, this is explicitly stated in the corresponding descriptive metadata. In these cases, the copyright notice states “Public domain”, with a reference to the CC0 Public Domain Statement.
 
 Information extracted from https://www.rijksmuseum.nl/en/research/conduct-research/data/policy 
 
